@@ -33,7 +33,7 @@ Some upcoming features
 
 ![pendart01](https://user-images.githubusercontent.com/66809588/175615497-1ad877dc-be5d-4763-ad8c-394a2bd290f6.png)
 ![Simulator Screen Shot - iP![pendart2](https://user-images.githubusercontent.com/66809588/175615653-da8b8570-8138-45d8-ad9e-8954f5adff98.png)
-![pendart2](https://user-images.githubusercontent.com/66809588/175615836-528aac7a-b1e7-4925-9ce6-ee0d56894355.png)
+![Simulator Screen Shot - iPhone 13 Pro - 2022-06-24 at 13 50 04](https://user-images.githubusercontent.com/66809588/175615946-b564bdf3-9759-49d9-a182-80984eac3d98.png)
 
 
 
