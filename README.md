@@ -14,7 +14,8 @@ See the deployed App [PendArt](https://dashnewsmads.herokuapp.com/)
 
 ## Wireframes Figma
 
-<img width="427" alt="image" src="https://user-images.githubusercontent.com/66809588/174495630-981326cc-9362-403c-a50e-72985657b8c8.png">
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/66809588/175626463-db545f02-41eb-4e85-9869-2b3ff04b5c2c.png">
+
 
 
 It Contains:
