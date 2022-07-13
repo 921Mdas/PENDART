@@ -9,7 +9,8 @@ See the deployed App [PendArt](https://dashnewsmads.herokuapp.com/)
 | Day	                  |                                 Task |
 |:---------------------:|:------------------------------------:|
 | Day 1 |	Wireframe, Collect Images, Fonts, assets Folder creation |
-| Day 2 |	components, styling, publish on Expo |
+| Day 2 |	navigation, components, styling |
+| Day 3 |	Form, styling |
 
 
 ## Wireframes Figma
@@ -23,16 +24,23 @@ It Contains:
 - [x] Landing Page
 - [x] List view
 - [x] Detailed View 
+- [x] Shopping Cart
+- [x] Chart tracking recent transactions
+- [x] checkout form including validation
+- [x] Database storing transactions
+
 
 
 Some upcoming features
 
-- [ ] Shopping Cart
-- [ ] Live Charts API tracking currency
+- [ ] scanning QR codes of art pieces and pre-loading forms and cart
+- [ ] API to convert Ethereum to USD
 
 ## Gallery
 
 ![image](https://user-images.githubusercontent.com/66809588/178771540-af5e6bb5-5e15-4e35-8f22-0bd409bf4c25.png)
+![image](https://user-images.githubusercontent.com/66809588/178772239-7c66c66f-8bf8-4e5e-8886-90d81be8f125.png)
+
 
 
 
