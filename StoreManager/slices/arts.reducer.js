@@ -26,6 +26,7 @@ export const BiddingCartSlice = createSlice({
     },
     deleteCartItem: (state, action) => {
       state.Bids = action.payload;
+      state.Cart = action.payload.length;
     },
   },
 });
