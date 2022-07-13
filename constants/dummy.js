@@ -1,8 +1,13 @@
 import assets from "./assets";
 
+const IDgenerator = () => {
+  const random = Math.random() * 0.021233 * 0.2;
+  return random.toString();
+};
+
 const NFTData = [
   {
-    id: "NFT-01",
+    id: IDgenerator(),
     name: "Roselda Scarf - Ethiopia",
     creator: "Peter Hadid",
     price: 3.25,
@@ -11,21 +16,21 @@ const NFTData = [
     image: assets.nft01,
     bids: [
       {
-        id: "BID-11",
+        id: IDgenerator(),
         name: "Hellen Corpa",
         price: 4.25,
         image: assets.person02,
         date: "January 12, 2016 at 11:10 PM",
       },
       {
-        id: "BID-12",
+        id: IDgenerator(),
         name: "Jennifer Sia",
         price: 4.5,
         image: assets.person03,
         date: "December 27, 2019 at 1:50 PM",
       },
       {
-        id: "BID-13",
+        id: IDgenerator(),
         name: "Rosie Wong",
         price: 4.75,
         image: assets.person04,
@@ -34,7 +39,7 @@ const NFTData = [
     ],
   },
   {
-    id: "NFT-02",
+    id: IDgenerator(),
     name: "Pende Masks - Congo",
     creator: "Sha Muzungu",
     price: 10.25,
@@ -43,7 +48,7 @@ const NFTData = [
     image: assets.nft02,
     bids: [
       {
-        id: "BID-21",
+        id: IDgenerator(),
         name: "Jessica Tan",
         price: 7.05,
         image: assets.person04,
@@ -52,7 +57,7 @@ const NFTData = [
     ],
   },
   {
-    id: "NFT-03",
+    id: IDgenerator(),
     name: "Passion Vase Erithrea",
     creator: "Sheila Hicks",
     price: 95.25,
@@ -61,14 +66,14 @@ const NFTData = [
     image: assets.nft03,
     bids: [
       {
-        id: "BID-31",
+        id: IDgenerator(),
         name: "Jessica Tan",
         price: 95.25,
         image: assets.person02,
         date: "December 12, 2019 at 12:10 PM",
       },
       {
-        id: "BID-32",
+        id: IDgenerator(),
         name: "Jennifer Sia",
         price: 95.5,
         image: assets.person03,
@@ -77,7 +82,7 @@ const NFTData = [
     ],
   },
   {
-    id: "NFT-04",
+    id: IDgenerator(),
     name: "Initiation Mask - Zimbabwe",
     creator: "Paul Kalonda",
     price: 54.25,
@@ -86,28 +91,28 @@ const NFTData = [
     image: assets.nft04,
     bids: [
       {
-        id: "BID-41",
+        id: IDgenerator(),
         name: "Jessica Tan",
         price: 56.25,
         image: assets.person02,
         date: "December 12, 2019 at 12:10 PM",
       },
       {
-        id: "BID-42",
+        id: IDgenerator(),
         name: "Jennifer Sia",
         price: 54.25,
         image: assets.person03,
         date: "December 27, 2019 at 1:50 PM",
       },
       {
-        id: "BID-43",
+        id: IDgenerator(),
         name: "Rosie Wong",
         price: 55.15,
         image: assets.person04,
         date: "December 31, 2019 at 3:50 PM",
       },
       {
-        id: "BID-44",
+        id: IDgenerator(),
         name: "Vincent Swift",
         price: 54.15,
         image: assets.person02,
@@ -116,7 +121,7 @@ const NFTData = [
     ],
   },
   {
-    id: "NFT-05",
+    id: IDgenerator(),
     name: "Colorful flag - South Africa",
     creator: "Josianne Musvaire",
     price: 10.25,
@@ -125,7 +130,7 @@ const NFTData = [
     image: assets.nft05,
     bids: [
       {
-        id: "BID-51",
+        id: IDgenerator(),
         name: "Jessica Tan",
         price: 10.25,
         image: assets.person02,
@@ -134,7 +139,7 @@ const NFTData = [
     ],
   },
   {
-    id: "NFT-06",
+    id: IDgenerator(),
     name: "Empty Soul - Gabon",
     creator: "Leo Mutunde",
     price: 20.25,
@@ -143,35 +148,35 @@ const NFTData = [
     image: assets.nft06,
     bids: [
       {
-        id: "BID-61",
+        id: IDgenerator(),
         name: "Jessica Tan",
         price: 20.25,
         image: assets.person02,
         date: "December 12, 2019 at 12:10 PM",
       },
       {
-        id: "BID-62",
+        id: IDgenerator(),
         name: "Jonh Sia",
         price: 20.5,
         image: assets.person03,
         date: "December 27, 2019 at 1:50 PM",
       },
       {
-        id: "BID-63",
+        id: IDgenerator(),
         name: "Rosie Wong",
         price: 20.75,
         image: assets.person04,
         date: "December 31, 2019 at 3:50 PM",
       },
       {
-        id: "BID-64",
+        id: IDgenerator(),
         name: "Siti Nurhaliza",
         price: 21.25,
         image: assets.person02,
         date: "December 31, 2019 at 3:50 PM",
       },
       {
-        id: "BID-65",
+        id: IDgenerator(),
         name: "Kaitlyn Lee",
         price: 7.25,
         image: assets.person02,
@@ -180,7 +185,7 @@ const NFTData = [
     ],
   },
   {
-    id: "NFT-07",
+    id: IDgenerator(),
     name: "Three spirited - Uganda",
     creator: "Victor Mashonge",
     price: 18.25,
@@ -189,14 +194,14 @@ const NFTData = [
     image: assets.nft07,
     bids: [
       {
-        id: "BID-61",
+        id: IDgenerator(),
         name: "Jessica Tan",
         price: 20.25,
         image: assets.person02,
         date: "December 12, 2019 at 12:10 PM",
       },
       {
-        id: "BID-62",
+        id: IDgenerator(),
         name: "Jonh Sia",
         price: 20.5,
         image: assets.person03,

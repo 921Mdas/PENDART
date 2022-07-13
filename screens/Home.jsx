@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View, SafeAreaView, FlatList } from "react-native";
+import { View, SafeAreaView, FlatList, StyleSheet } from "react-native";
 import { COLORS } from "../constants";
 import { NFTData } from "../constants/dummy";
 import NFTCard from "../Components/NFTCard";
@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={styles.full}>
       <FocusedStatusBar background={COLORS.primary} />
       <View style={{ flex: 1 }}>
         <View style={{ zIndex: 0 }}>
@@ -49,5 +49,11 @@ const Home = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  full: {
+    flex: 1,
+  },
+});
 
 export default Home;

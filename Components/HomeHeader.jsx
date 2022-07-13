@@ -1,112 +1,124 @@
-import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TextInput,
+  StyleSheet,
+  Pressable,
+} from "react-native";
 import React from "react";
 
 import { COLORS, FONTS, SIZES, assets } from "../constants";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 import { useNavigation } from "@react-navigation/native";
 import { Icon } from "react-native-elements";
+import { Ionicons } from "@expo/vector-icons";
 
 // equivalent to a navigation bar
+const styles = StyleSheet.create({
+  main: {
+    backgroundColor: COLORS.primary,
+    padding: SIZES.font,
+  },
+  container: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  logo: {
+    width: 100,
+    height: 25,
+  },
+  profileContainer: { width: 45, height: 45, borderRadius: 50 },
+  profilePic: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 50,
+    borderWidth: 2,
+    borderColor: COLORS.gold,
+  },
+  badge: {
+    position: "absolute",
+    width: 15,
+    height: 15,
+    bottom: 0,
+    right: 0,
+  },
+  searchBar: {
+    width: "100%",
+    borderRadius: SIZES.font,
+    backgroundColor: COLORS.gray,
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: SIZES.font,
+    paddingVertical: SIZES.small - 2,
+  },
+});
 
 const HomeHeader = ({ onSearch }) => {
   const navigation = useNavigation();
   return (
-    <View
-      style={{
-        backgroundColor: COLORS.primary,
-        padding: SIZES.font,
-      }}
-    >
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
+    <View style={styles.main}>
+      <View style={styles.container}>
         <Image
-          source={assets.logo}
+          source={require("../assets/images/Pendart.png")}
           resizeMode="contain"
-          style={{ width: 45, height: 25 }}
+          style={styles.logo}
         />
-        <Text
-          style={{
-            color: "white",
-            fontWeight: "bold",
-            fontSize: 20,
-            color: COLORS.gold,
-          }}
-        >
-          PENDART
-        </Text>
 
-        <TouchableOpacity onPress={() => navigation.navigate("Login")}>
-          <Icon name="logout" color={COLORS.gray}>
-            Exit
-          </Icon>
-        </TouchableOpacity>
-
-        <View style={{ width: 45, height: 45 }}>
+        <View style={styles.profileContainer}>
           <Image
             source={assets.person01}
-            resizeMode="contain"
-            style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: 50,
-              borderWidth: 2,
-              borderColor: COLORS.gold,
-            }}
+            resizeMode="cover"
+            style={styles.profilePic}
           />
           <Image
             source={assets.badge}
             resizeMode="contain"
-            style={{
-              position: "absolute",
-              width: 15,
-              height: 15,
-              bottom: 0,
-              right: 0,
-            }}
+            style={styles.badge}
           />
         </View>
       </View>
 
-      <View style={{ marginVertical: SIZES.font }}>
-        <Text
-          style={{
-            fontFamily: FONTS.regular,
-            fontSize: SIZES.small,
-            color: COLORS.white,
-          }}
+      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        <View style={{ marginVertical: SIZES.font }}>
+          <Text
+            style={{
+              fontFamily: FONTS.regular,
+              fontSize: SIZES.small,
+              color: COLORS.white,
+            }}
+          >
+            Welcome 😃
+          </Text>
+          <Text
+            style={{
+              fontFamily: FONTS.bold,
+              fontSize: SIZES.large,
+              color: COLORS.white,
+              marginTop: SIZES.base / 2,
+            }}
+          >
+            Place your Bid now!
+          </Text>
+        </View>
+        <Pressable
+          style={({ pressed }) =>
+            pressed
+              ? [
+                  { transform: [{ scale: 0.9 }] },
+                  ,
+                  { marginTop: 20, marginRight: 10 },
+                ]
+              : { marginTop: 20, marginRight: 10 }
+          }
+          onPress={() => navigation.navigate("Login")}
         >
-          Welcome!
-        </Text>
-
-        <Text
-          style={{
-            fontFamily: FONTS.bold,
-            fontSize: SIZES.large,
-            color: COLORS.white,
-            marginTop: SIZES.base / 2,
-          }}
-        >
-          African Art virtual Market
-        </Text>
+          <Ionicons name="log-out-outline" size={24} color={COLORS.gold} />
+        </Pressable>
       </View>
 
       <View style={{ marginTop: SIZES.font }}>
-        <View
-          style={{
-            width: "100%",
-            borderRadius: SIZES.font,
-            backgroundColor: COLORS.gray,
-            flexDirection: "row",
-            alignItems: "center",
-            paddingHorizontal: SIZES.font,
-            paddingVertical: SIZES.small - 2,
-          }}
-        >
+        <View style={styles.searchBar}>
           <Image
             source={assets.search}
             resizeMode="contain"

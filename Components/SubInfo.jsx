@@ -1,5 +1,5 @@
 import { View, Text, Image } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { SIZES, FONTS, COLORS, SHADOWS, assets } from "../constants";
 
@@ -75,6 +75,22 @@ export const People = () => {
   );
 };
 export const EndDate = () => {
+  const [timer, setTimer] = useState({
+    hours: "",
+    minutes: "",
+    seconds: "",
+  });
+  let time = new Date("Jan 5, 2024 15:37:25").getTime();
+  let countDown = setInterval(() => {
+    let now = new Date().getTime();
+    let leftOver = time - now;
+    let hours = Math.floor(
+      (leftOver % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    let minutes = Math.floor((leftOver % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((leftOver % (1000 * 60)) / 1000);
+  }, 1000);
+
   return (
     <View
       style={{
@@ -105,7 +121,7 @@ export const EndDate = () => {
           color: COLORS.primary,
         }}
       >
-        12h 30m
+        12h30
       </Text>
     </View>
   );

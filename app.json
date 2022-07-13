@@ -1,14 +1,16 @@
 {
   "expo": {
-    "name": "ReactNative",
-    "slug": "ReactNative",
+    "name": "PendArt",
+    "slug": "PendArt",
+    "privacy": "public",
+    "description": "An application to bid on artistic objects using ethereum",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/images/spash.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
