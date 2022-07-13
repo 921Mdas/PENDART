@@ -39,7 +39,7 @@ Some upcoming features
 ## Gallery
 
 ![image](https://user-images.githubusercontent.com/66809588/178771540-af5e6bb5-5e15-4e35-8f22-0bd409bf4c25.png)
-![image](https://user-images.githubusercontent.com/66809588/178773353-1abb8ad6-7555-4ba2-a15d-ceaffec146c1.png)
+![image](https://user-images.githubusercontent.com/66809588/178773471-2f1914e9-127f-45b8-a03c-cba186869510.png)
 
 
 
