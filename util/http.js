@@ -29,9 +29,9 @@ export const getPurchase = async () => {
   }
 };
 
-export const deletePurchase = (id, purchase) => {
+export const updatePurchase = (id, purchase) => {
   axios.put(`${firebase}/newpuchase/${id}.json`, purchase);
 };
-export const updatePurchase = () => {
+export const deletePurchase = () => {
   axios.delete(`${firebase}/newpuchase/${id}.json`);
 };
