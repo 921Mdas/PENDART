@@ -5,6 +5,18 @@ international market without resellers taking advantage of their
 work? PendArt allows its users to purchase unique African arts
 directly from the artist.
 
+Using React Native, Redux, and Firebase this mobile application deployed on Expo incorporates:
+
+
+How To use:
+- No login Required.
+- View a list of items
+- Click on a specific item to access a detailed view
+- Place a bid, prompt suggest navigating to a cart or continue bidding
+- Review items and total, checkout by filling in a form 
+- All transactions are recorded and updated in your inbox
+
+
 ## Tools used : React Native
 See the deployed App [PendArt](https://dashnewsmads.herokuapp.com/) 
 
