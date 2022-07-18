@@ -1,5 +1,9 @@
 # PENDART
-virtual african art market place using crypto currency
+Brilliant African artists in less privileged areas sell their
+valuable Art for so little. What if they could have access to an
+international market without resellers taking advantage of their
+work? PendArt allows its users to purchase unique African arts
+directly from the artist.
 
 ## Tools used : React Native
 See the deployed App [PendArt](https://dashnewsmads.herokuapp.com/) 
