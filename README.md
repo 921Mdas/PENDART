@@ -8,7 +8,7 @@ directly from the artist.
 Using React Native, Redux, and Firebase this mobile application deployed on Expo incorporates:
 
 
-How To use:
+How To use: This app requires that you download expo go to view.
 - No login Required.
 - View a list of items
 - Click on a specific item to access a detailed view
