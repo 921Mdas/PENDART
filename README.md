@@ -18,7 +18,8 @@ How To use: This app requires that you download expo go to view.
 
 
 ## Tools used : React Native
-See the deployed App [PendArt](https://dashnewsmads.herokuapp.com/) 
+Scan QR on mobile to see the App ![image](https://user-images.githubusercontent.com/66809588/206267696-deae07b9-c1bd-451c-a07b-b9484a83440f.png)
+
 
 ## Timeline
 
